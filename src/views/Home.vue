@@ -1,5 +1,5 @@
 <template>
-  <nav class="navbar navbar-expand-lg bg-light">
+  <nav class="navbar navbar-expand-lg bg-light shadow">
     <div class="container">
       <div>
         <RouterLink class="navbar-brand" to="/">
