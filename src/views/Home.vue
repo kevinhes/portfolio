@@ -1,11 +1,11 @@
 <template>
-  <nav class="navbar navbar-expand-lg bg-light shadow">
+  <nav class="navbar navbar-expand-lg bg-primary navbar-dark shadow">
     <div class="container">
       <div>
         <RouterLink class="navbar-brand" to="/">
           <h1 class="fs-5">姜宥先</h1>
         </RouterLink>
-        <p class="fs-8">前端工程師</p>
+        <p class="fs-8 text-light">前端工程師</p>
       </div>
       <div class="navbar-collapse">
         <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
