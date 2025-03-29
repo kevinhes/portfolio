@@ -3,17 +3,17 @@ import { Link } from 'react-router-dom'
 
 export default function HeaderNavbar() {
   return (
-    <header className='position-fixed w-100'>
-      <nav className='container'>
+    <header className='header'>
+      <nav className='container bg-light rounded-5'>
         <ul className="list-unstyled d-flex justify-content-center">
           <li>
-            <Link to="/">Home</Link>
+            <Link className='nav-link' to="/">Home</Link>
           </li>
           <li>
-            <Link to="side-project">Side Project</Link>
+            <Link className='nav-link' to="side-project">Side Project</Link>
           </li>
           <li>
-            <Link to="working">Working</Link>
+            <Link className='nav-link' to="working">Working</Link>
           </li>
         </ul>
       </nav>
