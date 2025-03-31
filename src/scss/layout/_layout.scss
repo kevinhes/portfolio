@@ -1,17 +1,42 @@
 .page-layout {
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding-top: 80px;
+  padding-bottom: 120px;
+}
+
+.page-layout.portfolio-layout {
+  // background: $purple-100;
 }
 
 .title-deco {
   position: relative;
+  width: 20px;
+  height: 20px;
+  background: $gray-500;
+  margin: 0 auto;
+  rotate: 180deg;
+  clip-path:polygon(0% 100%, 50%  0%,100% 100%);
+}
+
+.title-warp-deco {
+  position: relative;
   &:after {
     content: '';
     position: absolute;
-    bottom: -5px;
-    left: 0;
-    width: 100px;
-    height: 5px;
-    background-color: #000;
+    top: 50%;
+    right: 15%;
+    width: 30%;
+    height: 1px;
+    background: $gray-500;
+    transform: translateY(-50%);
+  }
+  &:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 15%;
+    width: 30%;
+    height: 1px;
+    background: $gray-500;
+    transform: translateY(-50%);
   }
 }

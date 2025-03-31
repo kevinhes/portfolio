@@ -4,7 +4,9 @@
   left: 0;
   right: 0;
   z-index: 10000;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  nav {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
   .nav-link {
     display: block;
     padding: 16px 20px;
