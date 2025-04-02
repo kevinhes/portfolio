@@ -38,7 +38,7 @@ export default function PorfolioList() {
       {
         filteredPortfolioList.map((portfolio) => (
           <div className="col-6 mb-4" key={portfolio.id}>
-            <Link to={`side-project/${portfolio.id}`} className="porfolio-card">
+            <Link to={`/side-project/${portfolio.id}`} className="porfolio-card">
               <div className="porfolio-card-body">
                 <div>
                   <h4 className='mb-3'>{portfolio.title}</h4>

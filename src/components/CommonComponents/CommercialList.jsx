@@ -58,7 +58,7 @@ export default function CommercialList() {
                 <div className='d-flex flex-wrap justify-content-end'>
                   {
                     portfolio.skills.map((skill, index) => (
-                      <p className="badge bg-secondary me-2 mb-2" key={index}>{skill}</p>
+                      <p className="badge bg-secondary me-2 mb-2 fs-7" key={index}>{skill}</p>
                     ))
                   }
                 </div>

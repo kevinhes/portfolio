@@ -21,7 +21,7 @@ function App() {
           <Route index element={<HomePage/>} />
           <Route path='side-project' element={<SideProjectPage/>} />
           <Route path='working' element={<WorkingPage/>} />
-          <Route path='side-project/:id' element={<PortfolioPage/>} />
+          <Route path='/side-project/:id' element={<PortfolioPage/>} />
         </Route>
       </Routes>
     </>
