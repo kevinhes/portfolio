@@ -1,5 +1,9 @@
-import { useMemo, useState } from 'react';
+import { useMemo, useState, useRef } from 'react';
 import { useLocation } from "react-router-dom"
+import { Modal } from 'bootstrap';
+
+// components
+import CommercialModal from './CommercialModal';
 
 export default function CommercialList() {
   const routerLocation = useLocation().pathname
@@ -41,12 +45,22 @@ export default function CommercialList() {
     }
     return commercialList
   }, [commercialList, routerLocation])
+
+  // Modal
+  const commercialModalRef = useRef(null);
+  const [temporaryPortfolio, setTemporaryPortfolio] = useState(null);
+
+  const handleModalOpen = (portfolio) => {
+    setTemporaryPortfolio(portfolio);
+    commercialModalRef.current.show();
+  }
+  
   return (
     <>
       {
         filteredCommercialList.map((portfolio, index) => (
           <div className="col-3 mb-4" key={index}>
-            <div className="commercial-card">
+            <div className="commercial-card" onClick={() => handleModalOpen(portfolio)}>
               <div className="card-img-wrapper">
                 <img src={portfolio.imgUrl} alt={portfolio.title} className={`card-img-top`} />
               </div>
@@ -67,6 +81,11 @@ export default function CommercialList() {
           </div>
         ))
       }
+      <CommercialModal
+        setTemporaryPortfolio={setTemporaryPortfolio}
+        temporaryPortfolio={temporaryPortfolio}
+        commercialModalRef={commercialModalRef}
+      />
     </>
   )
 }
