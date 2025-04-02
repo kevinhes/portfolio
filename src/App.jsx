@@ -8,6 +8,7 @@ import FrontLayout from './layouts/FrontLayout'
 import HomePage from './pages/HomePage'
 import SideProjectPage from './pages/SideProjectPage'
 import WorkingPage from './pages/WorkingPage'
+import PortfolioPage from './pages/singlepage/PortfolioPage'
 
 // style
 import './scss/main.scss'
@@ -20,6 +21,7 @@ function App() {
           <Route index element={<HomePage/>} />
           <Route path='side-project' element={<SideProjectPage/>} />
           <Route path='working' element={<WorkingPage/>} />
+          <Route path='side-project/:id' element={<PortfolioPage/>} />
         </Route>
       </Routes>
     </>
