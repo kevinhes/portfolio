@@ -33,7 +33,7 @@ export default function SkillList() {
         <div className="row">
           {
             skillList.map((skill, index) => (
-              <div className="col-md-6 col-xl-3 mb-4" key={index}>
+              <div className="col-md-6 col-lg-3 mb-4" key={index}>
                 <div className="card p-4">
                   <div className={`skill-card-img mb-2`}>
                     <img src={skill.imgUrl} alt={skill.title} className={`card-img-top ${index === 2 || index === 3 ? 'w-75' : ''}`} />

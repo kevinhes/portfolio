@@ -87,7 +87,7 @@ export default function PortfolioPage() {
   ])
   const singlePortfolio = useMemo(() => {
     return portfolioList.filter((portfolio) => portfolio.id === Number(id))[0]
-  }, [portfolioList])
+  }, [portfolioList, id])
   return (
     <main>
       <section className="portfoloi-banner">

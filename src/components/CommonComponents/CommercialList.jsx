@@ -1,42 +1,57 @@
-import { useMemo, useState, useRef } from 'react';
-import { useLocation } from "react-router-dom"
-import { Modal } from 'bootstrap';
+import { useMemo, useState } from 'react';
+import { useLocation, Link } from "react-router-dom"
 
 // components
-import CommercialModal from './CommercialModal';
+import CommercialInnerLink from './CommercialInnerLink';
+import CommercialOutLink from './CommercialOutLink';
 
 export default function CommercialList() {
   const routerLocation = useLocation().pathname
   const [commercialList] = useState([
     {
-      title: '生髮堂',
+      id: 1,
+      title: 'DCDC 生髮診所',
       imgUrl: '/commercial_web_site/生髮堂.png',
       description: '作品集描述',
-      skills: ['React', 'WordPress', 'bootstrap']
+      skills: ['React', 'WordPress', 'bootstrap'],
+      page: true,
+      link: 'https://dcdchair.com.tw/'
     },
     {
-      title: '凱恩',
+      id: 2,
+      title: '德國凱恩礦物塗料',
       imgUrl: '/commercial_web_site/凱恩.png',
       description: '作品集描述',
-      skills: ['WordPress', 'bootstrap']
+      skills: ['WordPress', 'bootstrap'],
+      page: true,
+      link: 'https://www.keim.com.tw/'
     },
     {
+      id: 3,
       title: '台大境外招生',
       imgUrl: '/commercial_web_site/台大境外招生.png',
       description: '作品集描述',
-      skills: ['WordPress', 'bootstrap']
+      skills: ['WordPress', 'bootstrap'],
+      page: false,
+      link: 'https://admissions.ntu.edu.tw/zh-hant/overseas-students/'
     },
     {
+      id: 4,
       title: '晶宴',
       imgUrl: '/commercial_web_site/晶宴.png',
       description: '作品集描述',
-      skills: ['WordPress', 'bootstrap']
+      skills: ['WordPress', 'bootstrap'],
+      page: false,
+      link: 'https://www.amazinghall.com.tw/'
     },
     {
+      id: 5,
       title: '集昌',
       imgUrl: '/commercial_web_site/集昌.png',
       description: '作品集描述',
-      skills: ['WordPress', 'bootstrap']
+      skills: ['WordPress', 'bootstrap'],
+      page: false,
+      link: 'https://www.tctma.com/'
     },
   ])
   const filteredCommercialList = useMemo(() => {
@@ -46,46 +61,21 @@ export default function CommercialList() {
     return commercialList
   }, [commercialList, routerLocation])
 
-  // Modal
-  const commercialModalRef = useRef(null);
-  const [temporaryPortfolio, setTemporaryPortfolio] = useState(null);
-
-  const handleModalOpen = (portfolio) => {
-    setTemporaryPortfolio(portfolio);
-    commercialModalRef.current.show();
-  }
-  
   return (
     <>
       {
         filteredCommercialList.map((portfolio, index) => (
-          <div className="col-3 mb-4" key={index}>
-            <div className="commercial-card" onClick={() => handleModalOpen(portfolio)}>
-              <div className="card-img-wrapper">
-                <img src={portfolio.imgUrl} alt={portfolio.title} className={`card-img-top`} />
-              </div>
-              <div className="card-body">
-                <div>
-                  <h4 className='mb-3'>{portfolio.title}</h4>
-                  <p> {portfolio.description} </p>
-                </div>
-                <div className='d-flex flex-wrap justify-content-end'>
-                  {
-                    portfolio.skills.map((skill, index) => (
-                      <p className="badge bg-secondary me-2 mb-2 fs-7" key={index}>{skill}</p>
-                    ))
-                  }
-                </div>
-              </div>
-            </div>
+          <div className="col-md-6 col-lg-3 mb-4" key={index}>
+            {
+              portfolio.page ? (
+                <CommercialInnerLink portfolio={portfolio} />
+              ) : (
+                <CommercialOutLink portfolio={portfolio} />
+              )
+            }
           </div>
         ))
       }
-      <CommercialModal
-        setTemporaryPortfolio={setTemporaryPortfolio}
-        temporaryPortfolio={temporaryPortfolio}
-        commercialModalRef={commercialModalRef}
-      />
     </>
   )
 }
