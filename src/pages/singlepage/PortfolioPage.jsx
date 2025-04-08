@@ -11,7 +11,7 @@ export default function PortfolioPage() {
       imgUrl: '/畫作電商.png',
       description: 
       `
-      <p class="mb-3">為六角學院 React 課程最終專案，可以進行完整的購物流程包含購物車、結帳、表單驗證以及後台商品管理、文章管理、訂單管理，前台有製作 RWD。</p>
+      <p class="mb-3">為虛擬畫廊 - ArtNova 的電商網站，整體以凸顯畫作作為重點已增加視覺焦點，可以進行完整的購物流程包含購物車、結帳、表單驗證以及後台商品管理、文章管理、訂單管理，前台有製作 RWD。</p>
       <p>使用 React 作為框架，React Router 實現 SPA 網站架構並使用 Redux 整合管理應用狀態，串接 API 處理前台以及後台資料，使用 Sass 管理 bootstrap 樣式管理</p>
       `,
       skillsDescription: [
@@ -38,22 +38,26 @@ export default function PortfolioPage() {
       id: 2,
       title: '訂房網站',
       imgUrl: '/訂房網站.png',
-      description: '作品集描述',
+      description:
+      `
+      <p class="mb-3">為六角學院 Nuxt 課程最終專案，可以進行完整的訂房流程包含日期選擇、人數輸入、訂單送出以及後台房型、訂單管理、新聞上架、菜餚上架，前台有製作 RWD。</p>
+      <p>使用 Nuxt 作為框架實現 SSR 網站架構並使用 Pinia 整合管理應用狀態，串接 API 處理前台以及後台資料，版型由六角提供</p>
+      `,
       skillsDescription: [
-        'React/React Router',
-        'Redux 管理數據及方法',
+        'Nuxt/Vue',
+        'Pinia 管理數據及方法',
         'Sass/bootstrap 管理客製化樣式以及元件',
-        'react-hook-form 處理表單驗證',
-        'react-loading 處理載入狀態',
+        'vee-validate 處理表單驗證',
+        'vue-loading 處理載入狀態',
         'sweetalert2 處理提示視窗',
       ],
       links: [
         {
-          link: 'https://github.com/kevinhes/gallery-ecommerce',
+          link: 'https://github.com/kevinhes/hotel-nuxt',
           icon: 'bi bi-github'
         },
         {
-          link: 'https://kevinhes.github.io/gallery-ecommerce/',
+          link: 'https://hotel-officail.onrender.com/',
           icon: 'bi bi-globe'
         }
       ],
@@ -61,24 +65,28 @@ export default function PortfolioPage() {
     },
     {
       id: 3,
-      title: 'Podcast 形象網站',
+      title: '建人五四三 形象網站',
       imgUrl: '/建人五四三.png',
-      description: '作品集描述',
+      description: 
+      `
+      <p class="mb-3">為建人五四三形象網站，整體以紅黑作為網站設計，可以播放試聽音檔以及對於音檔的操作，播放、暫停以及進度條拖曳</p>
+      <p class="mb-3">可以進行完整的購物流程以及後台商品、文章上架、訂單管理，前台有製作 RWD。</p>
+      <p>使用 Nuxt 作為框架實現 SSR 網站架構並使用 Pinia 整合管理應用狀態，串接 API 處理前台以及後台資料，版型由六角提供</p>
+      `,
       skillsDescription: [
-        'React/React Router',
-        'Redux 管理數據及方法',
+        'Vue/Vue Router',
         'Sass/bootstrap 管理客製化樣式以及元件',
-        'react-hook-form 處理表單驗證',
-        'react-loading 處理載入狀態',
+        'vee-validate 處理表單驗證',
+        'vue-loading 處理載入狀態',
         'sweetalert2 處理提示視窗',
       ],
       links: [
         {
-          link: 'https://github.com/kevinhes/gallery-ecommerce',
+          link: 'https://github.com/kevinhes/finalworkvue2022',
           icon: 'bi bi-github'
         },
         {
-          link: 'https://kevinhes.github.io/gallery-ecommerce/',
+          link: 'https://kevinhes.github.io/finalworkvue2022/#/',
           icon: 'bi bi-globe'
         }
       ],
