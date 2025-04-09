@@ -17,4 +17,13 @@
   .z-index-#{$i} {
     z-index:#{$i};
   }
+};
+
+@for $i from 1 through 10 {
+  .multi-ellipsis-#{$i} {
+    display: -webkit-box;
+    -webkit-line-clamp: #{$i}; /* 顯示幾行 */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
 }

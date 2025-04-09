@@ -6,13 +6,44 @@ export default function CommercialPage() {
 
   const [commercialList] = useState([
     {
+      id: 0,
+      title: '台北靈糧堂',
+      imgUrl: '/commercial_web_site/靈糧堂.png',
+      description:
+        `
+      <p class="mb-2">此專案為 DCDC 生髮診所打造官方形象網站，主要功能包含醫療資訊展示、頭髮知識部落格、線上諮詢與估價服務。整體架構以 WordPress 為基礎，並搭配自訂頁面設計與 Bootstrap 5 的網格系統，實現良好的響應式體驗。</p>
+      <p>為提升使用者互動體驗，線上估價功能以 React 實作，支援多重選取與表單驗證功能，提供流暢的操作流程。</p>
+      `,
+      responsiblePart: `
+      
+      `,
+      skillsDescription: [
+        'React/React Router',
+        'Redux 管理數據及方法',
+        'Sass/bootstrap 管理客製化樣式以及元件',
+        'react-hook-form 處理表單驗證',
+        'react-loading 處理載入狀態',
+        'sweetalert2 處理提示視窗',
+      ],
+      links: [
+        {
+          link: 'https://www.breadoflife.taipei/',
+          icon: 'bi bi-globe'
+        }
+      ],
+      skills: ['React', 'React router', 'Redux', 'bootstrap']
+    },
+    {
       id: 1,
       title: 'DCDC 生髮診所',
       imgUrl: '/commercial_web_site/生髮堂.png',
       description:
         `
-      <p class="mb-3">為六角學院 React 課程最終專案，可以進行完整的購物流程包含購物車、結帳、表單驗證以及後台商品管理、文章管理、訂單管理，前台有製作 RWD。</p>
-      <p>使用 React 作為框架，React Router 實現 SPA 網站架構並使用 Redux 整合管理應用狀態，串接 API 處理前台以及後台資料，使用 Sass 管理 bootstrap 樣式管理</p>
+      <p class="mb-2">此專案為 DCDC 生髮診所打造官方形象網站，主要功能包含醫療資訊展示、頭髮知識部落格、線上諮詢與估價服務。整體架構以 WordPress 為基礎，並搭配自訂頁面設計與 Bootstrap 5 的網格系統，實現良好的響應式體驗。</p>
+      <p>為提升使用者互動體驗，線上估價功能以 React 實作，支援多重選取與表單驗證功能，提供流暢的操作流程。</p>
+      `,
+      responsiblePart: `
+      
       `,
       skillsDescription: [
         'React/React Router',
@@ -34,7 +65,12 @@ export default function CommercialPage() {
       id: 2,
       title: '德國凱恩礦物塗料',
       imgUrl: '/commercial_web_site/凱恩.png',
-      description: '作品集描述',
+      description: `
+      <p>凱恩礦物塗料官方網站，透過 Popovers 建立選色系統連結案例，並以 Cookie 技術實作客製化提問箱功能。</p>
+      `,
+      responsiblePart: `
+      
+      `,
       skillsDescription: [
         'React/React Router',
         'Redux 管理數據及方法',

@@ -30,7 +30,6 @@ export default function PorfolioList() {
       `
       <p class="mb-3">為建人五四三形象網站，整體以紅黑作為網站設計，可以播放試聽音檔以及對於音檔的操作，播放、暫停以及進度條拖曳</p>
       <p class="mb-3">可以進行完整的購物流程以及後台商品、文章上架、訂單管理，前台有製作 RWD。</p>
-      <p>使用 Nuxt 作為框架實現 SSR 網站架構並使用 Pinia 整合管理應用狀態，串接 API 處理前台以及後台資料，版型由六角提供</p>
       `,
       skills: ['vue', 'vue router', 'bootstrap']
     },
