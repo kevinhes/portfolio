@@ -74,23 +74,22 @@ export default function CommercialPage() {
       title: '德國凱恩礦物塗料',
       imgUrl: '/commercial_web_site/凱恩.png',
       description: `
-      <p>凱恩礦物塗料官方網站，透過 Popovers 建立選色系統連結案例，並以 Cookie 技術實作客製化提問箱功能。</p>
+        <p class="mb-2">凱恩礦物塗料官方網站旨在提供完整的塗料知識，主要功能包含色票選擇、案例瀏覽、知識部落格與影音展示。</p>
+        <p class="mb-2">為實現色票與實際案例的連結，使用 Bootstrap 的 Popover 功能設計互動式色票選擇系統，點擊後即可快速預覽對應案例。</p>
+        <p class="mb-2">網站以 WordPress 為基礎，搭配自訂頁面與 Bootstrap 5 網格系統，實現良好的響應式體驗與模組化維護。</p>
       `,
       responsiblePart: [
-        'WordPress 網站架設',
-        'WordPress 主題客製化',
-        '自製 WordPress 外掛',
-        'WordPress RESTful API 建立以及串接',
-        'JavaScript 播放器製作',
-        '文章、影音上架',
+        '網站架構設計與建置',
+        'WordPress 主題與樣式客製化',
+        'Bootstrap Popover 實作選色功能',
+        'RESTful API 建立與資料串接',
       ],
       skillsDescription: [
-        'React/React Router',
-        'Redux 管理數據及方法',
-        'Sass/bootstrap 管理客製化樣式以及元件',
-        'react-hook-form 處理表單驗證',
-        'react-loading 處理載入狀態',
-        'sweetalert2 處理提示視窗',
+        'WordPress 與 Bootstrap 整合開發',
+        'Sass / Bootstrap 打造響應式版型',
+        'Popover 建立互動式色票系統',
+        '使用 Cookie 實作使用者提問紀錄',
+        '使用 Swiper 建立滑動式案例展示區塊',
       ],
       links: [
         {
@@ -98,7 +97,7 @@ export default function CommercialPage() {
           icon: 'bi bi-globe'
         }
       ],
-      skills: ['Nuxt', 'Pinia', 'bootstrap']
+      skills: ['WordPress', 'bootstrap']
     },
   ])
   const singlePortfolio = useMemo(() => {

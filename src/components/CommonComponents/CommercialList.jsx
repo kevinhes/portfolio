@@ -61,13 +61,49 @@ export default function CommercialList() {
     },
     {
       id: 5,
-      title: '集昌',
+      title: '集昌股份有限公司',
       imgUrl: '/commercial_web_site/集昌.png',
       description: '作品集描述',
       skills: ['WordPress', 'bootstrap'],
       page: false,
       link: 'https://www.tctma.com/'
     },
+    {
+      id: 6,
+      title: '穎美科技',
+      imgUrl: '/commercial_web_site/穎美.png',
+      description: '作品集描述',
+      skills: ['WordPress', 'bootstrap'],
+      page: false,
+      link: 'https://www.yimtex.com.tw/zh-hant/'
+    },
+    {
+      id: 7,
+      title: '規則王',
+      imgUrl: '/commercial_web_site/規則王.png',
+      description: '作品集描述',
+      skills: ['WordPress', 'bootstrap'],
+      page: false,
+      link: 'https://www.onerule.com.tw/'
+    },
+    {
+      id: 8,
+      title: '比海顧問',
+      imgUrl: '/commercial_web_site/比海.png',
+      description: '作品集描述',
+      skills: ['WordPress', 'bootstrap'],
+      page: false,
+      link: 'https://behigh.com.tw/'
+    },
+    {
+      id: 9,
+      title: '川慶科技',
+      imgUrl: '/commercial_web_site/川慶.png',
+      description: '作品集描述',
+      skills: ['WordPress', 'bootstrap'],
+      page: false,
+      link: 'https://www.chunking.com.tw/'
+    }
   ])
   const filteredCommercialList = useMemo(() => {
     if (routerLocation === '/') {
