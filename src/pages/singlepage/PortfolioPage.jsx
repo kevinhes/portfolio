@@ -43,6 +43,7 @@ export default function PortfolioPage() {
       <p class="mb-3">為六角學院 Nuxt 課程最終專案，可以進行完整的訂房流程包含日期選擇、人數輸入、訂單送出以及後台房型、訂單管理、新聞上架、菜餚上架，前台有製作 RWD。</p>
       <p>使用 Nuxt 作為框架實現 SSR 網站架構並使用 Pinia 整合管理應用狀態，串接 API 處理前台以及後台資料，版型由六角提供</p>
       `,
+      
       skillsDescription: [
         'Nuxt/Vue',
         'Pinia 管理數據及方法',

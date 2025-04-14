@@ -9,21 +9,26 @@ export default function CommercialPage() {
       id: 0,
       title: '台北靈糧堂',
       imgUrl: '/commercial_web_site/靈糧堂.png',
-      description:
-        `
-      <p class="mb-2">此專案為 DCDC 生髮診所打造官方形象網站，主要功能包含醫療資訊展示、頭髮知識部落格、線上諮詢與估價服務。整體架構以 WordPress 為基礎，並搭配自訂頁面設計與 Bootstrap 5 的網格系統，實現良好的響應式體驗。</p>
-      <p>為提升使用者互動體驗，線上估價功能以 React 實作，支援多重選取與表單驗證功能，提供流暢的操作流程。</p>
-      `,
-      responsiblePart: `
-      
-      `,
+      description: `
+      <p class="mb-2">面對傳統宗教網站使用不便與維護效率低的問題，重新設計台北靈糧堂官網，提供穩定且直覺的影音與經文查詢體驗。</p>
+      <p class="mb-2">透過 WordPress 客製化主題與元件化開發，結合 RESTful API 技術，打造無刷新介面，提升網站互動性與載入效能。JavaScript 播放器支援即時切換講道影音。</p>
+      <p>針對後台資料管理，開發自動化上傳插件，協助管理者快速整理上百筆文章資料，優化日常維護流程。</p>
+    `,
+      responsiblePart: [
+        'WordPress 網站架設',
+        'WordPress 主題客製化',
+        '自製 WordPress 外掛',
+        'WordPress RESTful API 建立以及串接',
+        'JavaScript 播放器製作',
+        '文章、影音上架',
+      ],
       skillsDescription: [
-        'React/React Router',
-        'Redux 管理數據及方法',
+        'WordPress',
+        '自製 WordPress 外掛',
         'Sass/bootstrap 管理客製化樣式以及元件',
-        'react-hook-form 處理表單驗證',
-        'react-loading 處理載入狀態',
-        'sweetalert2 處理提示視窗',
+        'PHP CURL 處理 API 請求',
+        '解析 RSS 以及 JSON 資料',
+        'JavaScript 處理音訊播放',
       ],
       links: [
         {
@@ -31,7 +36,7 @@ export default function CommercialPage() {
           icon: 'bi bi-globe'
         }
       ],
-      skills: ['React', 'React router', 'Redux', 'bootstrap']
+      skills: ['WordPress', 'PHP', 'cURL', 'bootstrap']
     },
     {
       id: 1,
@@ -39,19 +44,22 @@ export default function CommercialPage() {
       imgUrl: '/commercial_web_site/生髮堂.png',
       description:
         `
-      <p class="mb-2">此專案為 DCDC 生髮診所打造官方形象網站，主要功能包含醫療資訊展示、頭髮知識部落格、線上諮詢與估價服務。整體架構以 WordPress 為基礎，並搭配自訂頁面設計與 Bootstrap 5 的網格系統，實現良好的響應式體驗。</p>
+      <p class="mb-2">此專案為 DCDC 生髮診所打造官方形象網站，主要功能包含醫療資訊展示、頭髮知識部落格、線上諮詢與估價服務。</p>
+      <p class="mb-2">整體架構以 WordPress 為基礎，並搭配自訂頁面設計與 Bootstrap 5 的網格系統，實現良好的響應式體驗。</p>
       <p>為提升使用者互動體驗，線上估價功能以 React 實作，支援多重選取與表單驗證功能，提供流暢的操作流程。</p>
       `,
-      responsiblePart: `
-      
-      `,
+      responsiblePart: [
+        '網站架構規劃與建置',
+        'WordPress 主題客製化與樣式開發',
+        'RESTful API 建立與前端串接',
+        '開發 React 線上估價功能模組',
+      ],
       skillsDescription: [
-        'React/React Router',
-        'Redux 管理數據及方法',
-        'Sass/bootstrap 管理客製化樣式以及元件',
-        'react-hook-form 處理表單驗證',
-        'react-loading 處理載入狀態',
-        'sweetalert2 處理提示視窗',
+        'WordPress 與 React 整合開發',
+        'Sass/Bootstrap 客製化版型與元件',
+        'React Hook Form 表單驗證設計',
+        '客製 RESTful API 串接與資料傳遞',
+        '使用 Swiper 實作互動式區塊',
       ],
       links: [
         {
@@ -59,7 +67,7 @@ export default function CommercialPage() {
           icon: 'bi bi-globe'
         }
       ],
-      skills: ['React', 'React router', 'Redux', 'bootstrap']
+      skills: ['React', 'React hook form', 'WordPress', 'bootstrap']
     },
     {
       id: 2,
@@ -68,9 +76,14 @@ export default function CommercialPage() {
       description: `
       <p>凱恩礦物塗料官方網站，透過 Popovers 建立選色系統連結案例，並以 Cookie 技術實作客製化提問箱功能。</p>
       `,
-      responsiblePart: `
-      
-      `,
+      responsiblePart: [
+        'WordPress 網站架設',
+        'WordPress 主題客製化',
+        '自製 WordPress 外掛',
+        'WordPress RESTful API 建立以及串接',
+        'JavaScript 播放器製作',
+        '文章、影音上架',
+      ],
       skillsDescription: [
         'React/React Router',
         'Redux 管理數據及方法',
@@ -101,7 +114,7 @@ export default function CommercialPage() {
         <section className="container">
           <div className="row">
             <div className="col-lg-4">
-              <h5 className='mb-5'>個人作品</h5>
+              <h5 className='mb-5'>商業作品</h5>
               <div className="d-flex justify-content-between align-items-center mb-12">
                 <h2> {singlePortfolio.title} </h2>
                 <div>
@@ -132,6 +145,14 @@ export default function CommercialPage() {
               <div className="mb-5">
                 <h5 className='mb-3'>作品介紹：</h5>
                 <div className='mb-10' dangerouslySetInnerHTML={{ __html: singlePortfolio.description }}></div>
+                <h5 className='mb-3'>負責內容：</h5>
+                <ul className="list-unstyled mb-10">
+                  {
+                    singlePortfolio.responsiblePart.map((skill) => (
+                      <li key={skill} className='mb-2'>{skill}</li>
+                    ))
+                  }
+                </ul>
                 <h5 className='mb-3'>使用技術：</h5>
                 <ul className="list-unstyled">
                   {
