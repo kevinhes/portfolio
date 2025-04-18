@@ -8,7 +8,7 @@ export default function CommercialPage() {
     {
       id: 0,
       title: '台北靈糧堂',
-      imgUrl: '/commercial_web_site/靈糧堂.png',
+      imgUrl: '/portfolio/commercial_web_site/靈糧堂.png',
       description: `
       <p class="mb-2">面對傳統宗教網站使用不便與維護效率低的問題，重新設計台北靈糧堂官網，提供穩定且直覺的影音與經文查詢體驗。</p>
       <p class="mb-2">透過 WordPress 客製化主題與元件化開發，結合 RESTful API 技術，打造無刷新介面，提升網站互動性與載入效能。JavaScript 播放器支援即時切換講道影音。</p>
@@ -41,7 +41,7 @@ export default function CommercialPage() {
     {
       id: 1,
       title: 'DCDC 生髮診所',
-      imgUrl: '/commercial_web_site/生髮堂.png',
+      imgUrl: '/portfolio/commercial_web_site/生髮堂.png',
       description:
         `
       <p class="mb-2">此專案為 DCDC 生髮診所打造官方形象網站，主要功能包含醫療資訊展示、頭髮知識部落格、線上諮詢與估價服務。</p>
@@ -72,7 +72,7 @@ export default function CommercialPage() {
     {
       id: 2,
       title: '德國凱恩礦物塗料',
-      imgUrl: '/commercial_web_site/凱恩.png',
+      imgUrl: '/portfolio/commercial_web_site/凱恩.png',
       description: `
         <p class="mb-2">凱恩礦物塗料官方網站旨在提供完整的塗料知識，主要功能包含色票選擇、案例瀏覽、知識部落格與影音展示。</p>
         <p class="mb-2">為實現色票與實際案例的連結，使用 Bootstrap 的 Popover 功能設計互動式色票選擇系統，點擊後即可快速預覽對應案例。</p>
