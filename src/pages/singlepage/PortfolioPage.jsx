@@ -8,7 +8,7 @@ export default function PortfolioPage() {
     {
       id: 1,
       title: '畫作電商',
-      imgUrl: '/畫作電商.png',
+      imgUrl: '/portfolio/畫作電商.png',
       description: 
       `
       <p class="mb-3">為虛擬畫廊 - ArtNova 的電商網站，整體以凸顯畫作作為重點已增加視覺焦點，可以進行完整的購物流程包含購物車、結帳、表單驗證以及後台商品管理、文章管理、訂單管理，前台有製作 RWD。</p>
@@ -37,7 +37,7 @@ export default function PortfolioPage() {
     {
       id: 2,
       title: '訂房網站',
-      imgUrl: '/訂房網站.png',
+      imgUrl: '/portfolio/訂房網站.png',
       description:
       `
       <p class="mb-3">為六角學院 Nuxt 課程最終專案，可以進行完整的訂房流程包含日期選擇、人數輸入、訂單送出以及後台房型、訂單管理、新聞上架、菜餚上架，前台有製作 RWD。</p>
@@ -58,7 +58,7 @@ export default function PortfolioPage() {
           icon: 'bi bi-github'
         },
         {
-          link: 'https://hotel-officail.onrender.com/',
+          link: 'https://hotel-final-od5y.onrender.com/',
           icon: 'bi bi-globe'
         }
       ],
@@ -67,7 +67,7 @@ export default function PortfolioPage() {
     {
       id: 3,
       title: '建人五四三 形象網站',
-      imgUrl: '/建人五四三.png',
+      imgUrl: '/portfolio/建人五四三.png',
       description: 
       `
       <p class="mb-3">為建人五四三形象網站，整體以紅黑作為網站設計，可以播放試聽音檔以及對於音檔的操作，播放、暫停以及進度條拖曳</p>
